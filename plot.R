@@ -1,0 +1,5 @@
+source('data_source.R')
+need_data <- load_Data()
+jpeg(filename='plot1.jpg', width=480, height=480, units='px')
+hist(need_data$Global_active_power, col="red", main="Global Active Power", xlab="Global Active Power (kilowatts)")
+dev.off()
